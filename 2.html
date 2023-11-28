@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Tracking System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container mt-5">
+
+    <h1 class="text-center">SOLAR TRACKING SYSTEM</h1>
+
+    <div class="mt-4">
+        <h2>What is a Solar Tracker?</h2>
+        <p class="lead">A solar tracker is a device that follows the sun as it moves across the sky. When solar trackers are
+            coupled with solar panels, the panels can follow the path of the sun and produce more renewable energy for
+            you to use.
+            Solar trackers are usually paired with ground mount solar systems but recently, rooftop-mounted trackers
+            have come onto the market.
+            Typically, solar tracking equipment will be connected to the racking of the solar panels. From there, the
+            solar panels will be able to move along with the movement of the sun.</p>
+        <img src="solar_roof.webp" style="width:100%; max-width: 500px; height:auto; border-radius: 20px; display: block; margin-left: auto; margin-right: auto;"
+            class="img-fluid mt-4"><br><br>
+
+        <h2>Solar Tracker using Arduino</h2>
+        <p>A solar tracker is a device that orients solar panels, mirrors, or other devices toward the sun to maximize the
+            absorption of sunlight. The main necessity of using a solar tracker, particularly one controlled by Arduino,
+            lies in optimizing the efficiency and output of solar energy systems. Key reasons for using a solar tracker:
+        </p>
+        <ul class="list-group">
+            <li class="list-group-item"><b>Increased Energy Harvesting Efficiency:</b>Solar panels generate the maximum power
+                when they are directly facing the sun. A solar tracker ensures that the panels are always oriented
+                towards the sun, maximizing the amount of sunlight they receive throughout the day. This can
+                significantly increase the overall energy harvesting efficiency of a solar power system.</li>
+            <li class="list-group-item"><b>Enhanced Power Output:</b> By keeping solar panels aligned with the sun's position, a
+                solar tracker can boost the overall power output of a solar energy system. This is particularly
+                important in locations where sunlight conditions vary throughout the day and across seasons.</li>
+            <li class="list-group-item"><b>Optimal Angle Adjustment:</b> Solar trackers can adjust the tilt angle of solar panels to
+                account for the changing position of the sun in the sky. This is crucial for capturing sunlight more
+                effectively, especially in regions with a significant variation in the sun's angle throughout the day
+                and across different seasons.</li>
+            <li class="list-group-item"><b>Adaptation to Environmental Changes: </b>Weather conditions, such as clouds or haze, can
+                impact the amount of sunlight reaching solar panels. A solar tracker can dynamically adjust the
+                position of the panels to adapt to these changes, maintaining optimal alignment with the sun and
+                mitigating the impact of environmental factors on energy production.</li>
+            <li class="list-group-item"><b>Educational and DIY Projects:</b> Building a solar tracker using Arduino can be an
+                educational and engaging project for students and DIY enthusiasts. It provides an opportunity to
+                learn about solar energy, electronics, programming, and automation. Arduino is a popular choice for
+                controlling solar trackers due to its ease of use, versatility, and affordability. By using sensors
+                and actuators, an Arduino-based solar tracker can continuously monitor the position of the sun and
+                adjust the orientation of the solar panels accordingly, ensuring maximum energy capture.</li>
+        </ul>
+    </div>
+
+    <div class="mt-4">
+        <h2>ABOUT OUR PROJECT</h2>
+        <h3>Components Used:</h3>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <p><u><b>Software Used</u></b><br><br><b>Arduino IDE:</b> The Arduino Integrated Development
+                        Environment (IDE) is a software platform used for writing, compiling, and uploading code to
+                        Arduino microcontroller boards. It provides a user-friendly interface that simplifies the
+                        process of programming Arduino boards, making it accessible to beginners and experienced
+                        developers alike.</p>
+            </li>
+            <li class="list-group-item">
+                <p><u><b>Hardware Used</u></b><br><br>
+                    <ul class="list-group">
+                        <li class="list-group-item"><b>Arduino Uno:</b> The Uno is one of the more popular boards in the
+                            Arduino family and a great choice for beginners. The Arduino hardware and software was
+                            designed for artists, designers, hobbyists, hackers, newbies, and anyone interested in
+                            creating interactive objects or environments. Arduino can interact with buttons, LEDs,
+                            motors, speakers, GPS units, cameras, the internet, and even your smart-phone or your TV.
+                            This flexibility combined with the fact that the Arduino software is free, the hardware
+                            boards are pretty cheap, and both the software and hardware are easy to learn has led to a
+                            large community of users who have contributed code and released instructions for a huge
+                            variety of Arduino-based projects.<br>
+                            <img src="ardino.jpeg" style="width:100%; max-width: 300px; height:auto; display: block; margin-left: auto; margin-right: auto;">
+                        </li><br>
+                        <li class="list-group-item"><b>Solar Panel:</b> Solar panels in a solar tracker are photovoltaic
+                            devices that convert sunlight into electricity. Integrated into the tracker, these panels
+                            are dynamically adjusted to optimize their orientation, ensuring they face the sun for
+                            maximum energy absorption. The solar tracker's movement, guided by sensors and control
+                            systems, allows the panels to follow the sun's path throughout the day. This dynamic
+                            alignment significantly improves energy efficiency compared to fixed solar panel
+                            installations. Solar trackers, with their adaptability, are particularly effective in
+                            maximizing electricity generation in varying environmental conditions.</li><br>
+                            <img src="solar.jpeg"  style="width:100%; max-width: 300px; height:auto;  display: block; margin-left: auto; margin-right: auto;">
+                            <br> <li class="list-group-item"><b>SG90 servo motor:</b> The SG90 servo motor is a compact, lightweight
+                            device widely used in hobbyist and small-scale electronics projects. It is a type of rotary
+                            actuator that operates with precision and control. The SG90 is known for its affordability
+                            and versatility, making it popular for applications such as model airplanes, cars, and
+                            robotic projects. With a 180-degree range of motion, the SG90 is controlled by sending
+                            electrical pulses to determine the desired position, and it includes a feedback mechanism to
+                            ensure accurate positioning. Its small size, ease of use, and relatively low cost make the
+                            SG90 servo motor a common choice for various DIY and prototyping endeavors.</li><br>
+                            <img src="servo.jpeg" style="width:100%; max-width: 300px; height:auto;  display: block; margin-left: auto; margin-right: auto;">
+                            <br><li class="list-group-item"><b>LDR sensor:</b> An LDR (Light Dependent Resistor) sensor is a type of
+                            electronic component that exhibits a change in resistance based on the intensity of light
+                            falling on it. Also known as a photoresistor, the LDR's resistance decreases as the ambient
+                            light level increases, and vice versa. This property makes it widely used in
+                            light-sensitive applications, such as automatic streetlights, photography exposure control,
+                            and ambient light detection in electronic devices. The LDR operates on the principle of the
+                            photoconductivity effect, where the conductivity of the semiconductor material within the
+                            sensor varies with light exposure. It is commonly employed as a simple and cost-effective
+                            solution for detecting and responding to changes in light conditions in various electronic
+                            and electrical systems.</li><br>
+                            <img src="ldr.jpeg" style="width:100%; max-width: 300px; height:auto;  display: block; margin-left: auto; margin-right: auto;">
+                            <br><li class="list-group-item"><b>Resistor:</b> A resistor is a passive two-terminal electronic component
+                            that impedes the flow of electric current. It is designed to introduce a specific amount of
+                            resistance into an electrical circuit, thereby controlling the current flow and voltage
+                            levels. Resistors find widespread use in electronic circuits to limit current, divide
+                            voltages, set bias points, and perform other functions essential for proper circuit
+                            operation. They play a fundamental role in shaping and controlling the behavior of electrical
+                            circuits in electronic devices and systems.</li><br>
+                            <img src="resistor.jpeg"style="width:100%; max-width: 300px; height:auto;  display: block; margin-left: auto; margin-right: auto;">
+                            <br><li class="list-group-item"><b>Jump wires and Foam board:</b> Jump wires and foam boards are integral
+                            elements in electronics and prototyping endeavors. Jump wires, with their flexible design
+                            and connectors, serve as indispensable tools for establishing electrical connections between
+                            components on a breadboard or within an electronic circuit. Their various lengths and colors
+                            facilitate adaptable and temporary linkages during the testing and development phases of
+                            projects. Complementing this, foam boards, composed of polystyrene foam encased between
+                            paper or plastic sheets, provide a lightweight and rigid foundation for physical
+                            prototypes.</li><br>
+                            <img src="wires.jpeg" style="width:100%; max-width: 300px; height:auto; display: inline-block; margin-left: auto; margin-right: auto;"></ul>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="mt-4">
+     <h2>Step by step procedure</h2>
+     <h4>Step-1</h4>Cut the base part of the project. To do this,we used the following measurements.<br><br>
+     <div style="text-align: center;">
+        <img src="1.jpeg" style="max-width: 100%; height: auto; display: inline-block;width:100%; max-width: 300px;">
+      </div>
+      <br>
+     <h4>Step-2</h4>Attach the following pieces to the base part.
+     <div style="text-align: center;">
+        <img src="3.jpeg" style="max-width: 100%; height: auto; display: inline-block;width:100%; max-width: 300px;">
+      </div>
+      <br>
+     <h4>Step-3</h4>Attach the servo motor. For that, use the pictures below.
+     <div style="text-align: center;">
+        <img src="5.jpeg" style="max-width: 100%; height: auto; display: inline-block;width:100%; max-width: 300px;">
+      </div>
+      <br>
+     <h4>Step-4</h4>Attach two pieces of rigifoam to the solar panel. After, attach an iron stick to one side of the solar panel.
+     <div style="text-align: center;">
+        <img src="7.jpeg" style="max-width: 100%; height: auto; display: inline-block;width:100%; max-width: 300px;">
+      </div>
+      <br>
+     <h4>Step-5</h4>Solder the 10k resistor to one leg of the LDR. Also, solder this way for both sensors.(But as of now we have used breadboard).Solder these sensors together.
+     <div style="text-align: center;">
+        <img src="final.jpeg" style="max-width: 100%; height: auto; display: inline-block;width:100%; max-width: 300px;">
+      </div>
+
+    </div>
+     <div>
+        <h2>Conclusion:</h2>
+      <p style="justify-content: center; ">  The solar tracking system designed with Arduino, servo motor, and LDR sensors presents 
+an efficient and cost-effective solution for optimizing solar panel orientation. The LDR 
+sensors accurately measure light intensity, allowing the servo motor to dynamically adjust 
+the solar panel angles. This dynamic adjustment ensures that the solar panels consistently 
+face the sun, significantly improving energy absorption and overall efficiency.
+The incorporation of the Blynk app integration adds a remote control and monitoring aspect 
+to the system. Users can interact with the solar tracker through the Blynk app, offering a 
+convenient and user-friendly interface for adjusting settings and monitoring the system's 
+performance.
+The project showcases the practical application of basic electronic components, 
+demonstrating how an Arduino, servo motor, and sensors can be integrated to create a 
+functional and responsive solar tracking system. The versatility of the system is enhanced 
+by its adaptability to changing light conditions, contributing to increased energy harvesting 
+and making it a valuable solution for solar power optimization.
+In conclusion, this solar tracking project combines simplicity with effectiveness, making it 
+suitable for educational purposes, small-scale solar applications, and as a foundation for 
+further exploration into renewable energy systems</p>
+     </div>
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
